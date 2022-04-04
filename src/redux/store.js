@@ -11,6 +11,9 @@ const reducer = (state, action) => {
     case 'ADD_CARD':
       return {...state, cards: [...state.cards, {...action.payload, id : shortid()}]};
 
+    case 'SEARCH':
+      return {...state, searchInput: action.payload};
+      
     default:
       return state;
   };
