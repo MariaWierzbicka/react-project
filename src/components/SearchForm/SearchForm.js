@@ -3,6 +3,7 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { updateSearch } from '../../redux/store';
 
 
 
@@ -13,8 +14,7 @@ const SearchForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    const lowCaseSearch = search.toLowerCase();
-    dispatch({ type: 'SEARCH', payload: { lowCaseSearch } });
+    dispatch(updateSearch({search}));
     setSearch('');
   }
 
