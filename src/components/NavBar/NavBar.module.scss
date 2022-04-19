@@ -1,0 +1,32 @@
+@import '../../styles/settings.scss';
+
+//
+nav {
+  background-color: darken($color-dark, 3%);
+  padding: 10px 50px;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navBar i {
+  font-size: 24px;
+  color: $color-light;
+  transform: translateY(50%);
+}
+.links {
+  list-style: none;
+  & li {
+    display: inline-block;
+    margin-right: 14px;
+    & a {
+      color: $color-light;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
