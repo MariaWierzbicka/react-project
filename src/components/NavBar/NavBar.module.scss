@@ -17,16 +17,23 @@ nav {
   color: $color-light;
   transform: translateY(50%);
 }
-.links {
+ul {
   list-style: none;
-  & li {
-    display: inline-block;
-    margin-right: 14px;
-    & a {
-      color: $color-light;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
+  
+}
+li {
+  display: inline-block;
+  margin-right: 14px;
+  & a {
+    color: $color-light;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    &.linkActive {
+      color: $color-warning;
     }
   }
 }
+
+
+
