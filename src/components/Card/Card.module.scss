@@ -12,10 +12,14 @@
     font-weight: bold;
 }
 
+span {
+    transform: translateY(20%);
+}
+
 i::before {
     padding-right: $base-size;
     // color: $color-dark;
-    font-size: ($base-size * 2);
+    font-size: ($base-size * 1.5);
     vertical-align: middle;
     position: relative;
   }
@@ -32,6 +36,14 @@ button {
 .active {
     color: $color-favorite;
 }
+
+.removeBtn i{
+    color: $color-dark;
+    &:hover {
+        color: $color-warning
+    }
+}
+
 
 @media (max-width: 767px) {
 .column {

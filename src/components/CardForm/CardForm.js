@@ -3,7 +3,7 @@ import TextInput from './../TextInput/TextInput';
 import { useState } from 'react';
 import styles from './CardForm.module.scss';
 import { useDispatch } from 'react-redux';
-import { addCard } from '../../redux/store';
+import { addCard } from '../../redux/cardsRedux';
 
 
 

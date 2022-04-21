@@ -1,18 +1,12 @@
 import styles from './Lists.module.scss';
-import { getAllLists } from '../../redux/store';
+import { getAllLists } from '../../redux/listsRedux';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { resetSearch } from '../../redux/store';
 import ListForm from '../ListForm/ListForm';
 
 const Lists = () => {
 
   const lists = useSelector(getAllLists);
-
-  const dispatch = useDispatch();
-  useEffect(() => dispatch(resetSearch()), []);
 
   return (
     <section className={styles.lists}>
